@@ -2,11 +2,6 @@ import { useState } from "react";
 import { useMutation } from "convex/react";
 import { api } from "../../../convex/_generated/api";
 
-type ToDoFormProps = {
-    onCreate: (title: string, description: string) => void;
-}
-
-
 export function NewToDoForm() {
     const [title, setTitle] = useState("");
     const [description, setDescription] = useState("");
